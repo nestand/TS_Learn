@@ -9,8 +9,10 @@
     <script src="dist/app.js" defer></script>
   </head>
   <body>
+    <!-- template is not visible and loaded immediately, instead it can be reached via JS-->
     <template id="project-input">
       <form>
+        <!-- the form with three inputs -->
         <div class="form-control">
           <label for="title">Title</label>
           <input type="text" id="title" />
@@ -23,10 +25,12 @@
           <label for="people">People</label>
           <input type="number" id="people" step="1" min="0" max="10" />
         </div>
+        <!-- add button -->
         <button type="submit">ADD PROJECT</button>
       </form>
     </template>
     <template id="single-project">
+      <!-- the list of the projects as an object stored in array -->
       <li></li>
     </template>
     <template id="project-list">
@@ -37,6 +41,7 @@
         <ul></ul>
       </section>
     </template>
+    <!-- add entire list to the DOM -->
     <div id="app"></div>
   </body>
 </html>
